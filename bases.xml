@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config ref="Default.xls">
+	<bases name="Portland Beta">
+		<base azimuth="80" baseid="000002000009" color="#FF33CC" frequency="2553000" latitude="47.629958" longitude="-122.175841" name="KIRK001_A"/>
+		<base azimuth="60" baseid="0003E8000101" color="#0000FF" frequency="2553000" latitude="45.543255" longitude="-122.961293" name="JF_A"/>
+		<base azimuth="180" baseid="0003E8000102" color="#33FF00" frequency="2573000" latitude="45.543255" longitude="-122.961293" name="JF_B"/>
+		<base azimuth="280" baseid="0003E8000103" color="#FF9900" frequency="2583000" latitude="45.543255" longitude="-122.961293" name="JF_C"/>
+		<base azimuth="50" baseid="0003E8000111" color="#0000FF" frequency="2553000" latitude="45.532380" longitude="-122.927010" name="HF_A"/>
+		<base azimuth="180" baseid="0003E8000112" color="#33FF00" frequency="2573000" latitude="45.532380" longitude="-122.927010" name="HF_B"/>
+		<base azimuth="310" baseid="0003E8000113" color="#FF9900" frequency="2583000" latitude="45.532380" longitude="-122.927010" name="HF_C"/>
+		<base azimuth="50" baseid="0003E8000121" color="#0000FF" frequency="2553000" latitude="45.523648" longitude="-122.898079" name="OR_A"/>
+		<base azimuth="180" baseid="0003E8000122" color="#33FF00" frequency="2573000" latitude="45.523648" longitude="-122.898079" name="OR_B"/>
+		<base azimuth="300" baseid="0003E8000123" color="#FF9900" frequency="2583000" latitude="45.523648" longitude="-122.898079" name="OR_C"/>
+		<base azimuth="60" baseid="0003E8000131" color="#0000FF" frequency="2553000" latitude="45.547121" longitude="-122.914046" name="RA_A"/>
+		<base azimuth="180" baseid="0003E8000132" color="#33FF00" frequency="2573000" latitude="45.547121" longitude="-122.914046" name="RA_B"/>
+		<base azimuth="300" baseid="0003E8000133" color="#FF9900" frequency="2583000" latitude="45.547121" longitude="-122.914046" name="RA_C"/>
+	</bases>
+</config>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Commons Net"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/quaqua3.9.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/RXTX">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Documents and Settings/jfry/workspace/lib/rxtx-2.1-7-bins-r2/Windows"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Commons Logging"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/log4j"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Commons Configuration"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Commons Lang"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Commons Collection"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jfreechart-0.9.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JXPath"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JEP"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/TypeperfLib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/GPSLib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Ping"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/BCS200Lib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jsch_ssh2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Swin2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JAI 1.1.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/CPEi150"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/dom4j"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HttpClient"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jaxen"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Commons Codec"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JTidy"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

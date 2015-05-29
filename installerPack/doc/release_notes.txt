@@ -1,0 +1,21 @@
+Subject:	WiTT v10.1 released
+
+Changes:
+* Ping latency check fixed for Windows 7.
+* WiTT will no longer overwrite its configuration file when exiting.
+* Minor UI sizing changes.
+
+Installation Instructions:
+If a previous version of WiTT is installed, uninstall it completely by running the 
+WiTT uninstaller from Start->Programs->Clearwire->WiTT->Uninstall WiTT.
+1.	WiTT is a Java-based tool that requires Java 1.5.0 or higher.  Java can be downloaded 
+from the Sun web site: http://java.sun.com/javase/downloads/
+2.	Go to 
+https://max.clearwire.com/sites/tss/WiMAX%20%20Operations/Forms/AllItems.aspx?RootFolder=/sites/tss/WiMAX%20%20Operations/Software/WiTT
+or
+http://www.jefferyfry.com/clearwire/
+and download the WiTT package.
+3.	Launch WiTT—vX.X-install.jar by double-clicking the file.
+4.	Follow the steps of the installer to install WiTT.  Accept  the default selections.
+5.	Launch WiTT from Start->Programs->Clearwire->WiTT.
+

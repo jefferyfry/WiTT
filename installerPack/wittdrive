@@ -1,0 +1,24 @@
+m: 1f60f3C0 ; d ; Current Preamble Index
+v: gu32CurrFrameNumber ; d ; Current Ballpark FN
+
+v: g_u32NumOfHarqMimoMode3AllocsInMatA ; d ; HARQ MIMO Mode3 in MatA
+v: g_u32NumOfHarqMimoMode3AllocsInMatB ; d ; HARQ MIMO Mode3 in MatB
+
+v: gu32MSHOReqCntr ; d ; PHY MSHOReq Cntr
+v: gu32HoLogCallBackHoMsHo ; d ; MSHO Req On Air
+v: gu32BSHORspCntr ; d ; BSHORsp Cntr
+v: gu32HOIndCntr ; d ; HO Ind Cntr
+v: gu32HoLogCallBackHoInd ; d ; Ind On Air
+v: gu32FastRangIERecvd; d ; Fast Rang Rec
+v: gu32FastRangIEUsed; d ; Fast Rang Used
+m: 1f60f3cc ; d ; HO Latency ; (x/80000.0)
+m: 1f60f3C8 ; d ; Total HO Count
+m: 1f60f3C4 ; d ; Previous Preamble Index
+v: g_u32NumOfResync ; d  ; Number of Resyncs
+
+v: gu32HOState; d; HO State
+v: gu32MSHOReqCntr; d; MSHO REQ Sent
+v: gu32BSHORspCntr; d; BSHO RSP Recvd
+v: gu32MobNumOfNbrs; d; Number of Neighbors
+v: gNoDlmap; d; NO DLMAPs
+

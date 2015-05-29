@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<project default="main">
+    <target name="main" depends="compress,dist,installer" description="Main target">
+        <echo>
+            Building the .jar file.
+        </echo>
+    </target>
+  
+  <target name="compress" description="Compression target">
+        <jar jarfile="build/WiTT.jar" basedir="classes" />
+  </target>
+	
+	<target name="dist" description="Move jar file to installer package.">
+	        <copy file="build/WiTT.jar" todir="installerPack/lib" overwrite="yes"/>
+	  </target>
+	
+	<target name="installer" description="Build installer">
+		<izpack input="WiTT-install.xml"
+		        output="dist/WiTT-v10.1-install.jar"
+		        installerType="standard"
+		        basedir="${basedir}"
+		        izPackDir="dist"/>
+	</target>
+</project>

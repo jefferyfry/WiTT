@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
+<shortcuts>
+  <programGroup defaultName="Clearwire\WiTT"
+                location="applications"/>
+  <shortcut
+    name="WiTT"
+    target="$INSTALL_PATH\WiTT.exe"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH"
+    description="WiTT Launcher"
+    iconFile="$INSTALL_PATH\favicon.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="no"
+    startMenu="no"
+    startup="no">
+    <createForPack name="WiTT"/>
+  </shortcut>
+	<shortcut
+    name="WiTT Guide"
+    target="$INSTALL_PATH\doc\WiTT.doc"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH"
+    description="WiTT Guide"
+    iconFile="$INSTALL_PATH\favicon.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="no"
+    startMenu="no"
+    startup="no">
+    <createForPack name="WiTT"/>
+  </shortcut>
+  <shortcut
+    name="Release Notes"
+    target="$INSTALL_PATH\doc\release_notes.txt"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH"
+    description="WiTT Release Notes"
+    iconFile="$INSTALL_PATH\favicon.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="yes"
+    applications="no"
+    startMenu="no"
+    startup="no">
+    <createForPack name="WiTT"/>
+  </shortcut>
+  <shortcut
+    name="Uninstall WiTT"
+    target="$INSTALL_PATH\Uninstaller\uninstaller.jar"
+    commandLine=""
+    workingDirectory="$INSTALL_PATH"
+    description="WiTT Uninstaller"
+    iconFile="$INSTALL_PATH\favicon.ico"
+    iconIndex="0"
+    initialState="normal"
+    programGroup="yes"
+    desktop="no"
+    applications="no"
+    startMenu="no"
+    startup="no">
+    <createForPack name="WiTT"/>
+  </shortcut>
+</shortcuts>

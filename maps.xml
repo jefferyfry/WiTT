@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<maps>
+		<!-- <map file="classpath:alpha.jpg" se_lat="45.516054" se_long="-122.894631" name="Alpha Field" nw_lat="45.557997" nw_long="-122.976174"/> -->
+		
+		
+	
+
+
+<map file="classpath:hwy26.jpg" name="Highway 26" nw_lat="45.561107" nw_long="-122.911674" se_lat="45.523877" se_long="-122.83749"/>
+<map file="classpath:site18a_single_sector.jpg" name="Site 18A Single Sector" nw_lat="45.585222" nw_long="-122.914398" se_lat="45.556438" se_long="-122.857012"/>
+</maps>
+</config>

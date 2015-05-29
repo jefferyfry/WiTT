@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version="8.9">
+	<bcs200 adv-polling-interval="1000" demo-polling-interval="3000"/>
+	<typeperf device="Beceem"/>
+	<ping interval="1000" server="4.2.2.2"/>
+	<swin2 location="C:\\Beceem\\Swin" polling-interval="1000"/>
+	<cpei150 polling-interval="10"/>
+	<iperf enabled="false">
+		<local address="75.95.61.195" port="5001"/>
+		<remote address="75.95.61.195" port="5001" ssh-address="75.95.2.10" ssh-password="ip3rf" ssh-username="iperf"/>
+	</iperf>
+	<ftp address="www.jefferyfry.com" localFile="WiTT.jar" password="clearwire!" remoteFile="downlink/10MB" username="clearwire"/>
+	<gps buffer-size="5000" port="COM3"/>
+	<audio-files>
+		<audio file="classpath:networkdrop.wav" name="Network Drop"/>
+		<audio file="classpath:networkentry.wav" name="Network Entry"/>
+		<audio file="classpath:handover.wav" name="Handover"/>
+		<audio file="classpath:ping.wav" name="Ping"/>
+		<audio file="classpath:pong.wav" name="Pong"/>
+	</audio-files>
+	<color-scale>
+		<color value="#00AA00"/>
+		<color value="#00BB00"/>
+		<color value="#00CC00"/>
+		<color value="#00DD00"/>
+		<color value="#00EE00"/>
+		<color value="#00FF00"/>
+		<color value="#CCFF00"/>
+		<color value="#CCEE00"/>
+		<color value="#CCDD00"/>
+		<color value="#CCCC00"/>
+		<color value="#CCBB00"/>
+		<color value="#CCAA00"/>
+		<color value="#CC9900"/>
+		<color value="#CC8800"/>
+		<color value="#CC7700"/>
+		<color value="#CC6600"/>
+		<color value="#CC5500"/>
+		<color value="#CC4400"/>
+		<color value="#CC3300"/>
+		<color value="#CC2200"/>
+		<color value="#CC1100"/>
+		<color value="#CC0000"/>
+	</color-scale>
+	<valid-metrics>
+		<!-- The sub process may return many metrics, but these will be the only valid ones we record. -->
+		<!-- The order of metrics below is important.  These metrics will be displayed in the application in the following order. -->
+		<!-- The logger will also record in the following order. -->
+		<metric conversion="x" format="String" name="Time" property="pollTime"/>
+		<metric conversion="x" format="String" name="Time Since" property="timeSince"/>
+
+		<metric conversion="x" format="String" name="Network Entry Status" property="NETENTRY STATUS,Link Status"/>
+		<metric conversion="x" format="String" name="Client IP" property="clientIP,IP Address"/>		
+		
+		<!-- GPS Metrics -->
+		<metric conversion="x" format="###0.00000" name="Latitude" property="latitude"/>
+		<metric conversion="x" format="###0.00000" name="Longitude" property="longitude"/>
+		<metric conversion="x" format="###0.00000" name="Distance (km)" property="distance"/>
+		
+		<!-- Radio Metrics -->		
+		<metric conversion="x" format="###0" name="RSSI (dBm)" property="CUR RSSI,RSSI"/>
+		<metric conversion="x" format="####0" name="CINR (dB)" property="CUR CINR,CINR Current"/>
+		<metric conversion="x" format="String" name="Frequency (KHz)" property="CenterFrequency in KHz,Freq"/>
+		<metric conversion="x" format="String" name="CQICH" property="Num Of CqichTxmtd"/>
+		<metric conversion="x" format="String" name="CRC Errors" property="Num Of CRC Errors"/>
+		<metric conversion="x" format="String" name="Frame Errors" property="Frames in Error"/>
+		<metric conversion="x" format="String" name="HCS Errors" property="Num Of Hcs Errors"/>
+		<metric conversion="x" format="String" name="PER" property="PER"/>
+		<metric conversion="x" format="String" name="DL FEC" property="Downlink burst data FEC"/>
+		<metric conversion="x" format="String" name="Tx Power" property="Tx Power,TX Power"/>
+		<metric conversion="x" format="String" name="Tx Power Max" property="TX Power Max"/>
+		<metric conversion="x" format="String" name="Tx Power Mean" property="TX Power Mean"/>
+		<metric conversion="x" format="String" name="Base ID" property="BaseIDPost"/>
+		<metric conversion="x" format="String" name="BRTH" property="Number of BRTH"/>
+		<metric conversion="x" format="String" name="CIDs" property="Number of Connections"/>
+		<metric conversion="x" format="String" name="Frames Received" property="Num frames recvd"/>
+
+		<!-- CPEi150 Specific Stats -->
+		<metric conversion="x" format="String" name="CPU Utilization" property="CPU Utilization"/>
+		<metric conversion="x" format="String" name="RAM Utilization" property="RAM Utilization"/>
+		<metric conversion="x" format="String" name="TX PDUs" property="TX PDUs"/>
+		<metric conversion="x" format="String" name="RX PDUs" property="RX PDUs"/>
+		<metric conversion="x" format="String" name="ARQ Tx #" property="ARQ Tx #"/>
+		<metric conversion="x" format="String" name="ARQ Rx #" property="ARQ Rx #"/>
+		<metric conversion="x" format="String" name="RX Frame #" property="RX Frame #"/>
+		<metric conversion="x" format="String" name="RX Frame Error #" property="RX Frame Error #"/>
+		<metric conversion="x" format="String" name="HARQ Tx #" property="HARQ Tx #"/>
+		<metric conversion="x" format="String" name="HARQ Rx #" property="HARQ Rx #"/>
+		<metric conversion="x" format="String" name="FER" property="FER"/>
+		<metric conversion="x" format="String" name="PER" property="PER"/>
+		<metric conversion="x" format="String" name="FCH" property="FCH"/>
+		<metric conversion="x" format="String" name="Transport CIDs" property="Transport CIDs"/>
+		<metric conversion="x" format="String" name="BE CIDs" property="BE CIDs"/>
+		<metric conversion="x" format="String" name="UGS CIDs" property="UGS CIDs"/>
+		<metric conversion="x" format="String" name="ertPS CIDs" property="ertPS CIDs"/>
+		<metric conversion="x" format="String" name="UL Burst CID" property="UL Burst CID"/>
+		<metric conversion="x" format="String" name="DL Burst CID" property="DL Burst CID"/>
+		<metric conversion="x" format="String" name="RSSI Ant 1" property="RSSI Ant 1"/>
+		<metric conversion="x" format="String" name="RSSI Ant 2" property="RSSI Ant 2"/>
+		<metric conversion="x" format="String" name="SD CINR Ant 1" property="SD CINR Ant 1"/>
+		<metric conversion="x" format="String" name="SD CINR Ant 2" property="SD CINR Ant 2"/>
+		<metric conversion="x" format="String" name="Resyncs" property="Resyncs"/>
+
+		<!-- CPEi150 MCS Stats NOT USED
+		<metric conversion="x" format="String" name="64QAM 5/6 DL Bytes" property="64QAM 5/6 DL Bytes"/>
+		<metric conversion="x" format="String" name="64QAM 3/4 DL Bytes" property="64QAM 3/4 DL Bytes"/>
+		<metric conversion="x" format="String" name="64QAM 2/3 DL Bytes" property="64QAM 2/3 DL Bytes"/>
+		<metric conversion="x" format="String" name="64QAM 1/2 DL Bytes" property="64QAM 1/2 DL Bytes"/>
+		<metric conversion="x" format="String" name="16QAM 3/4 DL Bytes" property="16QAM 3/4 DL Bytes"/>
+		<metric conversion="x" format="String" name="16QAM 1/2 DL Bytes" property="16QAM 1/2 DL Bytes"/>
+		<metric conversion="x" format="String" name="QPSK 3/4 DL Bytes" property="QPSK 3/4 DL Bytes"/>
+		<metric conversion="x" format="String" name="QPSK 1/2 Rep 1 DL Bytes" property="QPSK 1/2-1 DL Bytes"/>
+		<metric conversion="x" format="String" name="QPSK 1/2 Rep 2 DL Bytes" property="QPSK 1/2-2 DL Bytes"/>
+		<metric conversion="x" format="String" name="QPSK 1/2 Rep 4 DL Bytes" property="QPSK 1/2-4 DL Bytes"/>
+		<metric conversion="x" format="String" name="QPSK 1/2 Rep 6 DL Bytes" property="QPSK 1/2-6 DL Bytes"/>
+		<metric conversion="x" format="String" name="16QAM 3/4 UL Bytes" property="16QAM 3/4 UL Bytes"/>
+		<metric conversion="x" format="String" name="16QAM 1/2 UL Bytes" property="16QAM 1/2 UL Bytes"/>
+		<metric conversion="x" format="String" name="QPSK 3/4 UL Bytes" property="QPSK 3/4 UL Bytes"/> -->
+		
+		<!-- Ping Metrics -->
+		<metric conversion="x" format="String" name="Ping Latency (ms)" property="Ping Latency"/>
+		
+		<!-- Typeperf Metrics -->
+		<metric conversion="x*8.0/1000.0" format="#####0.00" name="DL Tput (Kbps)" property="Bytes Received/sec"/>
+		<metric conversion="x*8.0/1000.0" format="#####0.00" name="UL Tput (Kbps)" property="Bytes Sent/sec"/>
+		<metric conversion="x" format="String" name="Packets/sec" property="Packets/sec"/>
+		<metric conversion="x" format="String" name="Packets Outbound Discarded" property="Packets Outbound Discarded"/>
+		<metric conversion="x" format="String" name="Packets Received Errors" property="Packets Received Errors"/>
+		<metric conversion="x" format="String" name="Current Bandwidth" property="Current Bandwidth"/>
+		<metric conversion="x" format="String" name="Packets Received/sec" property="Packets Received/sec"/>
+		<metric conversion="x" format="String" name="Packets Received Non-Unicast/sec" property="Packets Received Non-Unicast/sec"/>
+		<metric conversion="x" format="String" name="Output Queue Length" property="Output Queue Length"/>
+		<metric conversion="x" format="String" name="Packets Received Discarded" property="Packets Received Discarded"/>
+		<metric conversion="x" format="String" name="Packets Sent Unicast/sec" property="Packets Sent Unicast/sec"/>
+		<metric conversion="x" format="String" name="Packets Outbound Errors" property="Packets Outbound Errors"/>
+		<metric conversion="x" format="String" name="Packets Received Unknown" property="Packets Received Unknown"/>
+		<metric conversion="x" format="String" name="Packets Received Unicast/sec" property="Packets Received Unicast/sec"/>
+		<metric conversion="x" format="String" name="Packets Sent/sec" property="Packets Sent/sec"/>
+		<metric conversion="x" format="String" name="Packets Sent Non-Unicast/sec" property="Packets Sent Non-Unicast/sec"/>
+	
+		<metric conversion="x" format="String" name="Current Preamble Index" property="Current Preamble Index"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="Previous Preamble Index" property="Previous Preamble Index,Preamble Idx"/> <!-- Swin -->	
+		<metric conversion="x" format="String" name="Current Frame No" property="Current Ballpark FN"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="Instantaneous MIMO-A PDUs" property="Instantaneous MIMO-A"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="Instantaneous MIMO-B PDUs" property="Instantaneous MIMO-B"/> <!-- Swin -->
+		<metric conversion="x" format="##0.00%" name="Instantaneous MIMO-A Percent" property="Instantaneous MIMO-A Percent"/> <!-- Swin -->
+		<metric conversion="x" format="##0.00%" name="Instantaneous MIMO-B Percent" property="Instantaneous MIMO-B Percent"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="Total MIMO-A PDUs" property="HARQ MIMO Mode3 in MatA"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="Total MIMO-B PDUs" property="HARQ MIMO Mode3 in MatB"/> <!-- Swin -->
+		<metric conversion="x" format="##0.00%" name="Total MIMO-A Percent" property="MIMO-A Percent"/> <!-- Swin -->
+		<metric conversion="x" format="##0.00%" name="Total MIMO-B Percent" property="MIMO-B Percent"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="MSHO Requests" property="PHY MSHOReq Cntr"/> <!-- Swin -->
+		<!-- <metric conversion="x" format="String" name="MS HO Requests Air" property="MSHO Req On Air"/> Swin -->
+		<metric conversion="x" format="String" name="BSHO Responses" property="BSHORsp Cntr"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="HO Indications" property="HO Ind Cntr"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="MSHO REQ Sent" property="MSHO REQ Sent"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="BSHO RSP Recvd" property="BSHO RSP Recvd"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="HO Latency" property="HO Latency"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="HO Count" property="Total HO Count"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="HO State" property="HO State"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="Neighbors" property="Number of Neighbors"/> <!-- Swin -->
+		<!-- <metric conversion="x" format="String" name="Indications Air" property="Ind On Air"/> Swin -->
+		<metric conversion="x" format="String" name="Fast Rang Rec" property="Fast Rang Rec"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="Fast Rang Used" property="Fast Rang Used"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="Resyncs" property="Number of Resyncs"/> <!-- Swin -->
+		<metric conversion="x" format="String" name="DLMaps" property="NO DLMAPs,DL MAP"/> <!-- Swin -->
+
+		<metric conversion="x" format="String" name="Mac Msg Direction" property="Mac Msg Direction"/>
+		<metric conversion="x" format="String" name="Mac Msg Text" property="Mac Msg Text"/>
+		<metric conversion="x" format="String" name="Tag" property="Tag"/>
+		
+	</valid-metrics>
+	<display-options>
+		<display-value max="-30" min="-110" name="RSSI (dBm)"/>
+		<display-value max="40" min="-1" name="CINR (dB)"/>
+		<display-value max="15000" min="0" name="DL Tput (Kbps)"/>
+		<display-value max="5000" min="0" name="UL Tput (Kbps)"/>
+	</display-options>
+</config>
